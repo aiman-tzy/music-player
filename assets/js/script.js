@@ -571,7 +571,7 @@ const getRandomMusic = () => Math.floor(Math.random() * musicData.length);
 const shuffleMusic = () => currentMusic = getRandomMusic();
 
 const playerShuffleBtn = document.querySelector("[data-shuffle]");
-let isShuffled = false;
+
 
 const shuffle = function () {
   playerShuffleBtn.classList.toggle("active");
