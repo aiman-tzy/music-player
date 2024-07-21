@@ -402,7 +402,7 @@ const changePlayerInfo = function () {
   playMusic();
 }
 
-addEventOnElements(playlistItems, "overlay", changePlayerInfo);
+addEventOnElements(playlistItems, "click", changePlayerInfo);
 
 /** update player duration */
 const playerDuration = document.querySelector("[data-duration]");
@@ -534,7 +534,7 @@ const skipNext = function () {
   changePlaylistItem();
 }
 
-playerSkipNextBtn.addEventListener("click", skipNext);
+playerSkipNextBtn.addEventListener("overlay", skipNext);
 
 
 
