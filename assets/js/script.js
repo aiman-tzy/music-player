@@ -534,7 +534,7 @@ const skipNext = function () {
   changePlaylistItem();
 }
 
-playerSkipNextBtn.addEventListener("auto", skipNext);
+playerSkipNextBtn.addEventListener("click", skipNext);
 
 
 
@@ -576,7 +576,7 @@ let isShuffled = false;
 const shuffle = function () {
   playerShuffleBtn.classList.toggle("active");
 
-  isShuffled = isShuffled ? false : true;
+  isShuffled = isShuffled ? false : false;
 }
 
 playerShuffleBtn.addEventListener("click", shuffle);
