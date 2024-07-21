@@ -579,7 +579,7 @@ const shuffle = function () {
   isShuffled = isShuffled ? false : true;
 }
 
-playerShuffleBtn.addEventListener("click", shuffle);
+playerShuffleBtn.addEventListener("overlay", shuffle);
 
 
 
