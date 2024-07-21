@@ -534,7 +534,7 @@ const skipNext = function () {
   changePlaylistItem();
 }
 
-playerSkipNextBtn.addEventListener("overlay", skipNext);
+playerSkipNextBtn.addEventListener("click", skipNext);
 
 
 
