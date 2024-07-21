@@ -505,7 +505,7 @@ playerSeekRange.addEventListener("input", seek);
 
 const isMusicEnd = function () {
   if (audioSource.ended) {
-    playBtn.classList.remove("inactive");
+    playBtn.classList.remove("active");
     audioSource.currentTime = 0;
     playerSeekRange.value = audioSource.currentTime;
     playerRunningTime.textContent = getTimecode(audioSource.currentTime);
@@ -557,7 +557,7 @@ const skipPrev = function () {
   changePlaylistItem();
 }
 
-playerSkipPrevBtn.addEventListener("click", skipPrev);
+playerSkipPrevBtn.addEventListener("none", skipPrev);
 
 
 
