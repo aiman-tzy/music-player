@@ -557,7 +557,7 @@ const skipPrev = function () {
   changePlaylistItem();
 }
 
-playerSkipPrevBtn.addEventListener("none", skipPrev);
+playerSkipPrevBtn.addEventListener("click", skipPrev);
 
 
 
@@ -571,7 +571,7 @@ const getRandomMusic = () => Math.floor(Math.random() * musicData.length);
 const shuffleMusic = () => currentMusic = getRandomMusic();
 
 const playerShuffleBtn = document.querySelector("[data-shuffle]");
-let isShuffled = false;
+let isShuffled = true;
 
 const shuffle = function () {
   playerShuffleBtn.classList.toggle("active");
