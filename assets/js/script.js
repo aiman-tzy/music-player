@@ -505,7 +505,7 @@ playerSeekRange.addEventListener("input", seek);
 
 const isMusicEnd = function () {
   if (audioSource.ended) {
-    playBtn.classList.remove("active");
+    playBtn.classList.remove("inactive");
     audioSource.currentTime = 0;
     playerSeekRange.value = audioSource.currentTime;
     playerRunningTime.textContent = getTimecode(audioSource.currentTime);
@@ -576,7 +576,7 @@ let isShuffled = false;
 const shuffle = function () {
   playerShuffleBtn.classList.toggle("active");
 
-  isShuffled = isShuffled ? false : false;
+  isShuffled = isShuffled ? false : true;
 }
 
 playerShuffleBtn.addEventListener("click", shuffle);
