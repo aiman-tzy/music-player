@@ -447,7 +447,7 @@ const playMusic = function () {
   }
 }
 
-playBtn.addEventListener("click", playMusic);
+playBtn.addEventListener("overlay", playMusic);
 
 
 /** update running time while playing music */
@@ -579,7 +579,7 @@ const shuffle = function () {
   isShuffled = isShuffled ? false : true;
 }
 
-playerShuffleBtn.addEventListener("anyt", shuffle);
+playerShuffleBtn.addEventListener("click", shuffle);
 
 
 
