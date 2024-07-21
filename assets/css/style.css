@@ -607,7 +607,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
   .artist { --label-md: 1.8rem; }
 
   .seek-control {
-    margin-block-start: none;
+    margin-block-start: auto;
     display: grid;
     grid-template-columns: 1fr 150px;
     align-items: center;
@@ -637,7 +637,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
    * PLAYLIST
    */
 
-  .overlay { display: none; }
+  .overlay { display: auto; }
 
   .playlist {
     position: static;
