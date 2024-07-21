@@ -506,7 +506,7 @@ playerSeekRange.addEventListener("input", seek);
 const isMusicEnd = function () {
   if (audioSource.ended) {
     playBtn.classList.remove("active");
-    audioSource.currentTime = 1;
+    audioSource.currentTime = 0;
     playerSeekRange.value = audioSource.currentTime;
     playerRunningTime.textContent = getTimecode(audioSource.currentTime);
     updateRangeFill();
@@ -562,7 +562,7 @@ playerSkipPrevBtn.addEventListener("click", skipPrev);
 
 
 /**
- * SHUFFLE MUSIC
+ * 
  */
 
 /** get random number for shuffle */
@@ -571,12 +571,12 @@ const getRandomMusic = () => Math.floor(Math.random() * musicData.length);
 const shuffleMusic = () => currentMusic = getRandomMusic();
 
 const playerShuffleBtn = document.querySelector("[data-shuffle]");
-let isShuffled = true;
+let isShuffled = false;
 
 const shuffle = function () {
   playerShuffleBtn.classList.toggle("active");
 
-  isShuffled = isShuffled ? false : true;
+  isShuffled = isShuffled ? true : false;
 }
 
 playerShuffleBtn.addEventListener("click", shuffle);
