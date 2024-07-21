@@ -607,7 +607,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
   .artist { --label-md: 1.8rem; }
 
   .seek-control {
-    margin-block-start: auto;
+    margin-block-start: none;
     display: grid;
     grid-template-columns: 1fr 150px;
     align-items: center;
